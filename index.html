@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Thiago Lúcio</title>
-  </head>
-  <body>
-    <header>
-      <div class="container-horizontal redes-sociais">
-        <div class="mr20">
-          <img
-            class="iconRedesSociais"
-            src="./img/iconLinkedin.svg"
-            alt="linkedin"
-          />
-          <img
-            class="iconRedesSociais"
-            src="./img/iconGithub.svg"
-            alt="Github"
-          />
-          <img
-            class="iconRedesSociais"
-            src="./img/iconBehance.svg"
-            alt="Wordpress"
-          />
-          <img
-            class="iconRedesSociais"
-            src="./img/iconStackOverFlow.svg"
-            alt="Stack Overflow"
-          />
-          <img
-            class="iconRedesSociais"
-            src="./img/iconWordpress.svg"
-            alt="Wordpress"
-          />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+  <title>Thiago Lúcio</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-horizontal redes-sociais">
+      <div class="mr20">
+        <img class="iconRedesSociais" src="./img/iconLinkedin.svg" alt="linkedin" />
+        <img class="iconRedesSociais" src="./img/iconGithub.svg" alt="Github" />
+        <img class="iconRedesSociais" src="./img/iconBehance.svg" alt="Wordpress" />
+        <img class="iconRedesSociais" src="./img/iconStackOverFlow.svg" alt="Stack Overflow" />
+        <img class="iconRedesSociais" src="./img/iconWordpress.svg" alt="Wordpress" />
       </div>
-    </header>
-    <div class="container-horizontal">
-      <aside>
-        <div class="avatar"></div>
-      </aside>
-      <article>corpo do site</article>
     </div>
-  </body>
+  </header>
+  <div class="container-horizontal">
+    <div class="sidebar">
+      <div class="avatar"></div>
+      <a class="containerLogo" href="index.html">
+        <img src="img/logo.png" alt="Logo Thiago Lucio" height="40">
+        <span class="font-bar-code ml20">Thiago Lucio</span>
+      </a>
+      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
+        data-type="VERTICAL" data-vanity="thiago-lucio-bittencourt-b0452825" data-version="v1"></div>
+      <ul class="infoList">
+        <h4>Fast info Contact</h4>
+        <li><span class="spanTitle">email:</span><span class="spanText">thiagolucio@gmail.com</span></li>
+        <li><span class="spanTitle">email:</span><span class="spanText">+55 48 98403-7503</span></li>
+        <li><span class="spanTitle">country:</span><span class="spanText">Brasil</span></li>
+      </ul>
+      <div class="buttonDownload">
+        <a class="btn" href="https://thiagolucio.com.br/cv/cv-midia-en-thiagolucio.pdf">
+          <span>English CV</span>
+        </a>
+      </div>
+    </div>
+    <div class="content">corpo do site</div>
+  </div>
+</body>
+
 </html>

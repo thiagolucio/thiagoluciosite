@@ -6,8 +6,42 @@ body {
   list-style: none;
 }
 
+h1,
+h2 {
+  color: #0a66c2;
+}
+
+h3,
+h4,
+h5 {
+  color: #333333;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
 .mr20 {
   margin-right: 20px;
+}
+
+.containerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.font-bar-code {
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 2em;
+  font-weight: normal;
+  color: #333333;
 }
 
 .container-horizontal {
@@ -28,6 +62,44 @@ body {
   height: auto;
 }
 
+ul.infolist {
+  margin-bottom: 30px;
+}
+
+ul.infoList li {
+  list-style: none;
+  padding: 8px 16px;
+}
+
+.buttonDownload {
+  width: 100%;
+  height: 100px;
+  margin: 16px;
+  text-align: center;
+}
+
+.btn {
+  width: 200px !important;
+  height: 40px;
+  padding: 16px 30px;
+  border-radius: 30px;
+  color: white;
+  background: #0a66c2;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #01458a;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  box-shadow: rgba(10, 102, 194, 0.4) 0px 5px, rgba(10, 102, 194, 0.3) 0px 10px,
+    rgba(10, 102, 194, 0.2) 0px 15px, rgba(10, 102, 194, 0.1) 0px 20px,
+    rgba(10, 102, 194, 0.05) 0px 25px;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+}
+
 .iconRedesSociais:hover {
   box-shadow: rgba(10, 102, 194, 0.4) 0px 5px, rgba(10, 102, 194, 0.3) 0px 10px,
     rgba(10, 102, 194, 0.2) 0px 15px, rgba(10, 102, 194, 0.1) 0px 20px,
@@ -37,15 +109,19 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-aside {
+.sidebar {
   width: 30%;
   height: 100%;
   padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 100px;
 }
 
-article {
+.content {
   width: 70%;
   height: 100%;
   padding: 20px;
@@ -67,11 +143,17 @@ article {
   background-position: center center;
   cursor: pointer;
   -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-  both;
+    both;
   animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  transition: all ease .2s;  
+  transition: all ease 0.2s;
   /* -webkit-animation:rotate-scale-up .65s linear both;animation:rotate-scale-up .65s linear both */
 }
+
+.badge-base {
+  margin: 40px 30px;
+}
+
+/* MEDIA */
 
 @media (max-width: 1024px) {
   .iconRedesSociais {
@@ -86,9 +168,33 @@ article {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
+  .sidebar {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .badge-base {
+    margin: 40px 30px;
+  }
+
+  .containerLogo {
+    flex-direction: column;
+  }
+
+  .font-bar-code {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #333333;
+  }
 }
 
-/* animação */
+/* animação rotacional em escala */
 .rotate-scale-up {
   -webkit-animation: rotate-scale-up 0.65s linear both;
   animation: rotate-scale-up 0.65s linear both;
@@ -122,6 +228,7 @@ article {
   }
 }
 
+/* animação rotacional sem escala */
 .rotate-in-center {
   -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
