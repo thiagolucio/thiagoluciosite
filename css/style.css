@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+}
+
+header, .container {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    width: 100%;
+    height: 10%;    
+}
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+aside {
+    width: 30%;
+    height: 100%;
+    padding: 16px;
+    background-color: #1877cf;
+}
+
+article {
+    width: 70%;
+    height: 100%;
+    padding: 16px;
+}
